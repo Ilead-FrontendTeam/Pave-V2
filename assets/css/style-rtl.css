@@ -24,6 +24,7 @@ html {
 /*start header section*/
 header {
   height: 12vh;
+  min-height: 100px;
   margin-bottom: 25px;
 }
 header .head-sec {
@@ -60,6 +61,7 @@ header .head-sec .head-nav ul li a {
   color: #282828;
   font-size: 10px;
   font-weight: 600;
+  text-transform: uppercase !important;
 }
 header .head-sec .head-nav ul li .active {
   text-decoration: underline !important;
@@ -858,19 +860,22 @@ footer .email-details a {
     height: 65vh;
   }
   .desc1-overlay h1 {
-    width: 80% !important;
+    width: 45% !important;
+    font-size: 45px !important;
   }
   .desc1-overlay p {
     width: 50% !important;
   }
   .desc1 {
     height: 35vh !important;
+    padding-top: 0px !important;
   }
   .slider-sec {
-    height: 60vh;
+    height: 70vh;
   }
   .desc-plus .desc1-overlay h2 {
-    width: 65%;
+    width: 45%;
+    font-size: 45px;
   }
   .projects-section .projects-card {
     height: 300px;

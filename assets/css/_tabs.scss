@@ -13,7 +13,8 @@
 
     .desc1-overlay{
         h1{
-            width: 80% !important;
+            width: 45% !important;
+            font-size: 45px !important;
         }
         p{
             width: 50% !important;
@@ -22,14 +23,16 @@
 
     .desc1 {
         height: 35vh !important;
+        padding-top: 0px !important;
     }
 
     .slider-sec{
-        height: 60vh;
+        height: 70vh;
     }
 
     .desc-plus .desc1-overlay h2 {
-        width: 65%;
+        width: 45%;
+        font-size: 45px;
     }
 
     .projects-section{
