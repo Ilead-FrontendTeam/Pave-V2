@@ -1,0 +1,63 @@
+@media (min-width : 768px) and (max-width : 991px) {
+    header{
+        height: 8vh;
+    }
+
+    .sticky{
+        height: 12vh;
+    }
+
+    .intro-video{
+        height: 65vh;
+    }
+
+    .desc1-overlay{
+        h1{
+            width: 80% !important;
+        }
+        p{
+            width: 50% !important;
+        }
+    }
+
+    .desc1 {
+        height: 35vh !important;
+    }
+
+    .slider-sec{
+        height: 60vh;
+    }
+
+    .desc-plus .desc1-overlay h2 {
+        width: 65%;
+    }
+
+    .projects-section{
+        .projects-card{
+            height: 300px;
+        }
+    }
+
+    .desc-plus {
+        height: 35vh;
+    }
+
+    .about-us{
+        .about-overlay{
+            height: 210px !important;
+            top: 39%;
+        }
+    }
+
+    .about-collection{
+        height: 400px !important;
+    }
+
+    footer .location-div {
+        width: 85%;
+        height: 350px;
+        margin: 0px 0px 0px auto;
+    }
+
+
+}
