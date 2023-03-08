@@ -202,8 +202,12 @@ marquee ul li {
 .description-section .desc1 {
   position: relative;
   width: 100%;
-  height: 65vh;
+  height: 80vh;
   padding-top: 5%;
+  padding-top: 5%;
+  border-top: 8px solid #000;
+  border-bottom: 11px solid #000;
+  padding-bottom: 5%;
 }
 .description-section .desc1 .desc1-overlay {
   position: absolute;
