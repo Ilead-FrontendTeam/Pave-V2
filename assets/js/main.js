@@ -47,7 +47,16 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         title: 'All Day Event',
         description: ConvertHtmlData("Event 2", "1992-12-10","https://www.google.com/search?q=event&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjH6Z2Ih9b9AhVkTqQEHTKZDy0Q_AUoAXoECAEQAw&biw=1366&bih=643&dpr=1#imgrc=6hl641v5j1RFVM", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout" ),
-        start: '2023-03-15',
+        start: '2023-03-13',
+        eventContent :  { html: ConvertHtmlData("Event 2", "1992-12-10","https:www.kareem.com/15X15", "decriptio for the event" ) },
+        backgroundColor : '#f8f8f8',
+        textColor : '#000',
+        borderColor : '#f8f8f8'
+      }
+      ,{
+        title: 'All Day Event',
+        description: ConvertHtmlData("Event 2", "1992-12-10","https://www.google.com/search?q=event&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjH6Z2Ih9b9AhVkTqQEHTKZDy0Q_AUoAXoECAEQAw&biw=1366&bih=643&dpr=1#imgrc=6hl641v5j1RFVM", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout" ),
+        start: '2023-03-12',
         eventContent :  { html: ConvertHtmlData("Event 2", "1992-12-10","https:www.kareem.com/15X15", "decriptio for the event" ) },
         backgroundColor : '#f8f8f8',
         textColor : '#000',
@@ -63,11 +72,35 @@ document.addEventListener('DOMContentLoaded', function () {
     eventMouseEnter: function (info) {
       // var tooltip = '<div class="tooltipevent" style="width:100px;height:20px;background:#ccc;position:absolute;z-index:10001;"><h1>' + info.event.title + '<h1></div>';
         // var tooltip = '<div class="tooltip"><h1>' + info.event.extendedProps.description+'=========='+ info.event.extendedProps.eventContent.html + '<h1></div>';
-        var tooltip = '<div class="tooltip"><h1>' + info.event.extendedProps.description+ '<h1></div>';
+        var positionz=$(info.el).offset();
+
+        var screenWidth=$( window ).width();
+        console.log(screenWidth)
+
+        if (positionz.left <='774.6500244140625') {
+          console.log('aaaaa')
+          var tooltip = '<div class="tooltipz">' + info.event.extendedProps.description+ '</div>';
+
+        }
+        else{
+          console.log('bbbbbb')
+
+          var tooltip = '<div class="tooltip">' + info.event.extendedProps.description+ '</div>';
+
+        }
       var $tooltip = $(tooltip).appendTo(info.el);
+
+
+      
+
+      console.log(positionz)
+      
       $(info.el).mouseleave(function (e) {
           $(info.el).css('z-index', 10000);
+          $('.tooltip').remove();
+          $('.tooltipz').remove();
           $('.tooltip').hide();
+          $('.tooltipz').hide();
           // $tooltip.fadeIn('500');
           // $tooltip.fadeTo('10', 1.9);
       })
