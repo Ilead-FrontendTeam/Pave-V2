@@ -1130,13 +1130,13 @@ td {
   }
   .description-section .desc1 {
     padding: 2% 0px !important;
-    height: 55vh;
+    height: 31vh;
   }
   .desc-plus {
-    height: 35vh;
+    height: 21vh;
   }
   .slider-sec {
-    height: 55vh;
+    height: 31vh;
   }
 }
 @media (min-height: 800px) and (min-width: 2100px) {
