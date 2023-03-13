@@ -153,6 +153,14 @@ $('.slick-cards').slick({
   slidesToScroll: 1,
   arrows: true,
   responsive: [{
+    breakpoint: 2100,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
