@@ -1,4 +1,10 @@
 @media (min-width : 992px) and (max-width : 1199px) {
+
+    .sticky {
+        height: 11vh !important;
+    }
+
+
     header{
         height: 10vh;
     }
@@ -25,7 +31,7 @@
     }
 
     .slider-sec{
-        height: 35vh;
+        height: 45vh;
     }
 
     .desc-plus .desc1-overlay h2 {
@@ -42,4 +48,13 @@
         height: 35vh;
     }
 
+}
+
+
+
+
+@media (min-height: 1000px) and (min-width: 1400px){
+    .slider-sec {
+        height: 55vh !important;
+    }
 }

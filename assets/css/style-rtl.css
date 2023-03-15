@@ -863,6 +863,17 @@ td {
   z-index: 9 !important;
 }
 
+@media (max-width: 345px) and (max-height: 550px) {
+  .slider-sec {
+    height: 123vh;
+  }
+  .desc-plus .desc1-overlay h2 {
+    font-size: 10vw !important;
+  }
+  .desc1-overlay h2 {
+    margin-top: 0px !important;
+  }
+}
 @media (max-width: 767px) {
   .intro-video {
     height: 55vh;
@@ -1047,6 +1058,21 @@ td {
     margin-top: 12vh;
   }
 }
+@media (max-width: 500px) and (min-height: 700px) and (max-height: 950px) {
+  .slider-sec {
+    height: 78vh !important;
+  }
+}
+@media (max-width: 345px) and (min-height: 500px) and (max-height: 950px) {
+  .slider-sec {
+    height: 98vh !important;
+  }
+}
+@media (max-height: 650px) and (min-width: 991px) and (max-width: 1199px) {
+  .slider-sec {
+    height: 100vh !important;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   header {
     height: 8vh;
@@ -1095,7 +1121,20 @@ td {
     margin: 0px 0px 0px auto;
   }
 }
+@media (min-height: 900px) {
+  .slider-sec {
+    height: 55vh;
+  }
+}
+@media (min-height: 1200px) {
+  .slider-sec {
+    height: 50vh;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
+  .sticky {
+    height: 11vh !important;
+  }
   header {
     height: 10vh;
   }
@@ -1116,7 +1155,7 @@ td {
     font-size: 5vw !important;
   }
   .slider-sec {
-    height: 35vh;
+    height: 45vh;
   }
   .desc-plus .desc1-overlay h2 {
     width: 65%;
@@ -1126,6 +1165,11 @@ td {
   }
   .desc-plus {
     height: 35vh;
+  }
+}
+@media (min-height: 1000px) and (min-width: 1400px) {
+  .slider-sec {
+    height: 55vh !important;
   }
 }
 @media (min-height: 800px) and (min-width: 1400px) {
