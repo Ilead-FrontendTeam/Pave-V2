@@ -1109,7 +1109,11 @@ td {
     width: 50% !important;
   }
   .desc1 {
-    height: 35vh !important;
+    height: 50vh !important;
+    padding-bottom: 2% !important;
+  }
+  .desc1 h1 {
+    font-size: 5vw !important;
   }
   .slider-sec {
     height: 35vh;
